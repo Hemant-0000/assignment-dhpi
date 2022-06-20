@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import ParticipateChallenges from '../components/ParticipateChallenges'
 import Navbar from '../components/Navbar'
+import ExploreChallenges from '../components/ExploreChallenges'
+import Hackathons from '../components/Hackathons'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
 
       <Navbar/>
       <ParticipateChallenges/>
+      <ExploreChallenges/>
+      <Hackathons/>
       
     </div>
   )
