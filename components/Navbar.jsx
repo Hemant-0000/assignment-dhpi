@@ -1,7 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import MainLogo from '../public/assets/icons/Robot.svg'
-import AIVector from '../public/assets/icons/Vector.svg'
+import MainLogo from '../public/assets/icons/MainLogo.svg'
+import AI_1 from '../public/assets/icons/AI_1.svg'
+import AI_2 from '../public/assets/icons/AI_2.svg'
+import Vector50kdata_scie from '../public/assets/icons/Vector50kdata_scie.svg'
+import Vector50k_head from '../public/assets/icons/Vector50k_head.svg'
+import VectorAI_Challenge_Host from '../public/assets/icons/VectorAI_Challenge_Host.svg'
+import VectorAI_Challenge_Host_Eye1 from '../public/assets/icons/VectorAI_Challenge_Host_Eye1.svg'
+import VectorAI_Challenge_Host_Mouth from '../public/assets/icons/VectorAI_Challenge_Host_Mouth.svg'
+import rocket from '../public/assets/cardimage/rocket.png'
 
 function Navbar() {
     return (
@@ -15,7 +22,6 @@ function Navbar() {
                             src={MainLogo}
                             alt='Main logo'
                         />
-                        <p className='ml-2 font-bold'>DPhi</p>
                     </div>
                 </div>
 
@@ -32,9 +38,9 @@ function Navbar() {
                 </div>
 
                 {/* Rocket Image */}
-                <div className="right absolute w-[242px] h-[294px] left-[1050.34px] top-[170px] bg-[#003145] transform rotate-[21.41deg]">
+                <div className="right absolute w-[242px] h-[294px] left-[1050.34px] top-[170px] bg-[#003145]">
                     <Image
-                        src={MainLogo}
+                        src={rocket}
                         alt='Rocket image'
                     />
                 </div>
@@ -44,43 +50,49 @@ function Navbar() {
                 {/* AI Box */}
                 <div className='absolute w-[55px] h-[55px] left-[184px] top-[72px] bg-[#F2F4FF] rounded-[15px]'>
                     <div className='absolute w-[22.5px] h-[22.5px] top-[16.75px] left-[16.75px] text-[#002A3B]'>
-                        <Image
-                            src={AIVector}
-                            alt='AI box'
-                        />
+                        <Image src={AI_1} alt='AI box1' />
+                    </div>
+                    <div className='absolute w-[9.05px] h-[10px] top-[13.3px] left-[23.5px] text-[#002A3B]'>
+                        <Image src={AI_2} alt='AI box2' />
                     </div>
                 </div>
-                <h3 className='absolute top-[80px] left-[261px] w-[157px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] '>100K+</h3>
-                <p className='absolute top-[105px] left-[261px] font-[500] text-[16px] leading-[20px] text-white'>AI model submissions</p>
+                <h3 className='absolute top-[80px] left-[261px] w-[157px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] font-Inter'>100K+</h3>
+                <p className='absolute top-[105px] left-[261px] font-[500] text-[16px] leading-[20px] text-white font-Inter'>AI model submissions</p>
                 {/* Line  */}
                 <div className="absolute w-[1px] h-[38px] left-[493px] top-[79px] bg-[#C4C4C4]"></div>
 
                 {/* Data Science Box */}
                 <div className='absolute w-[55px] h-[55px] left-[609px] top-[72px] bg-[#F2F4FF] rounded-[15px]'>
-                    <div className='absolute w-[22.5px] h-[22.5px] top-[16.75px] left-[16.75px] text-[#002A3B]'>
-                        <Image
-                            src={AIVector}
-                            alt='AI box'
-                        />
+                    <div className='absolute w-[8.33px] h-[8.33px] top-[13px] left-[19.17px] text-[#002A3B]'>
+                        <Image src={Vector50k_head} alt='Data Scientist box 1' />
+                    </div>
+                    <div className='absolute w-[25px] h-[23.96px] top-[16.04px] left-[15px] text-[#002A3B]'>
+                        <Image src={Vector50kdata_scie} alt='Data Scientist box 2' />
                     </div>
                 </div>
-                <h3 className='absolute top-[80px] left-[696px] w-[83px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] '>50K+</h3>
-                <p className='absolute top-[105px] left-[696px] font-[500] text-[16px] leading-[20px] text-white'>Data Scientists</p>
+                <h3 className='absolute top-[80px] left-[696px] w-[83px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] font-Inter'>50K+</h3>
+                <p className='absolute top-[105px] left-[696px] font-[500] text-[16px] leading-[20px] text-white font-Inter'>Data Scientists</p>
                 {/* Line  */}
                 <div className="absolute w-[1px] h-[38px] left-[919px] top-[79px] bg-[#C4C4C4]"></div>
 
 
                 {/* Challenges Box */}
                 <div className='absolute w-[55px] h-[55px] left-[1011px] top-[72px] bg-[#F2F4FF] rounded-[15px]'>
-                    <div className='absolute w-[22.5px] h-[22.5px] top-[16.75px] left-[16.75px] text-[#002A3B]'>
-                        <Image
-                            src={AIVector}
-                            alt='AI box'
-                        />
+                    <div className='absolute w-[2.17px] h-[2.17px] top-[0.6px] left-[23.5px] text-[#002A3B]'>
+                        <Image src={VectorAI_Challenge_Host_Eye1} alt='AI box' />
+                    </div>
+                    <div className='absolute w-[2.17px] h-[2.17px] top-[0.6px] left-[30.5px] text-[#002A3B]'>
+                        <Image src={VectorAI_Challenge_Host_Eye1} alt='AI box' />
+                    </div>
+                    <div className='absolute w-[3px] h-[1.08px] top-[0.2px] left-[26.88px] text-[#002A3B]'>
+                        <Image src={VectorAI_Challenge_Host_Mouth} alt='AI box' />
+                    </div>
+                    <div className='absolute w-[19.5px] h-[26px] top-[13px] left-[18.25px] text-[#002A3B]'>
+                        <Image src={VectorAI_Challenge_Host} alt='AI box' />
                     </div>
                 </div>
-                <h3 className='absolute top-[80px] left-[1087px] w-[83px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] '>100+</h3>
-                <p className='absolute top-[105px] left-[1087px] font-[500] text-[16px] leading-[20px] text-white'>Data Scientists</p>
+                <h3 className='absolute top-[80px] left-[1087px] w-[83px] font-[700] text-[24px] leading-[20px] text-[#FFFFFF] font-Inter'>100+</h3>
+                <p className='absolute top-[105px] left-[1087px] font-[500] text-[16px] leading-[20px] text-white font-Inter'>Data Scientists</p>
             </div>
         </>
     )
