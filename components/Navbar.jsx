@@ -9,6 +9,7 @@ import VectorAI_Challenge_Host from '../public/assets/icons/VectorAI_Challenge_H
 import VectorAI_Challenge_Host_Eye1 from '../public/assets/icons/VectorAI_Challenge_Host_Eye1.svg'
 import VectorAI_Challenge_Host_Mouth from '../public/assets/icons/VectorAI_Challenge_Host_Mouth.svg'
 import rocket from '../public/assets/cardimage/rocket.png'
+import Link from 'next/link'
 
 function Navbar() {
     return (
@@ -17,12 +18,11 @@ function Navbar() {
 
                 {/* Navbar */}
                 <div className='w-full bg-[#FFFFFF] relative h-[64px]'>
-                    <div className='w-[87px] h-[38.11px] absolute top-[13px] left-[89px] flex items-center '>
-                        <Image
-                            src={MainLogo}
-                            alt='Main logo'
-                        />
-                    </div>
+                    <Link href={'/'}>
+                        <div className="w-[87px] h-[38.11px] absolute top-[13px] left-[89px] flex items-center cursor-pointer">
+                            <Image src={MainLogo} alt="Main logo" />
+                        </div>
+                    </Link>
                 </div>
 
                 {/* Rocket */}
@@ -34,7 +34,9 @@ function Navbar() {
                     {/* description  */}
                     <p className='absolute w-[531px] h-[112px] left-[205px] top-[340px] font-poppins font-[500] text-[18px] leading-[28px] text-[#ECECEC]'>AI Challenges at DPhi simulate real-world problems. It is a great place to put your AI/Data Science skills to test on diverse datasets allowing you to foster learning through competitions.</p>
                     {/* Button */}
-                    <button className='absolute w-[198px] h-[47px] left-[205px] top-[489px] bg-[#FFFFFF] rounded-[10px] font-poppins font-[600] text-[18px] text-center text-[#003145] leading-[18px]'>Create Challenge</button>
+                    <Link href={'/create-challenge'}>
+                        <button className='absolute w-[198px] h-[47px] left-[205px] top-[489px] bg-[#FFFFFF] rounded-[10px] font-poppins font-[600] text-[18px] text-center text-[#003145] leading-[18px] hover:bg-[#e4e2e2]'>Create Challenge</button>
+                    </Link>
                 </div>
 
                 {/* Rocket Image */}

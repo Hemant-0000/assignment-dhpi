@@ -10,7 +10,7 @@ function ExploreChallenges() {
         <h1 className='absolute w-[353px] h-[40px] left-[543px] top-[72px] font-poppins font-[600] leading-[40px] text-[28px] flex items-center text-center text-white'>Explore Challenges</h1>
 
         <div className='absolute w-[829px] h-[50px] top-[176px] left-[238px] bg-white rounded-[12px] shadow-forSearch'>
-        <div className='absolute left-[39.04px] top-[17.03px]'><Image src={Vectorsearch} alt='' /></div>
+        <div className='absolute left-[39.04px] top-[14.9px]'><Image src={Vectorsearch} alt='' /></div>
         <input className='absolute w-[762px] h-[50px] left-[67px] top-0 font-Inter font-[300] text-[18px] outline-none rounded-[12px]' type="text" placeholder='Search' />
         </div>
 
